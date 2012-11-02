@@ -5,7 +5,7 @@
     <meta name="title" content="{{title}} | {{blog_title}}" >
     <meta name="description" content="{{description}}" >
     <meta name="author" content="{{blog_author}}">
-    <title>{{title}} | {{blog_title}}</title>
+    <title>{% block title %}{{title}} | {{blog_description}}{% endblock %} </title>
     <!-- Le styles -->
     {% if use_bundles %}
         <link href="/assets/css/all.css" rel="stylesheet" type="text/css">
