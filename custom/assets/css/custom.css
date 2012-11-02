@@ -1,0 +1,67 @@
+
+.titlebox {
+    text-align: left;
+}
+
+#blog-title {
+    float: left;
+    font-size: 40px;
+    font-family: 'OFL Sorts Mill Goudy','OFL Sorts Mill Goudy TT',serif;
+    padding-left: 2px;
+    text-transform: lowercase;
+    background-color: transparent;
+    margin: 5px 0 0;
+}
+
+#blog-description {
+    float: left;
+    width: 270px;
+    font-size: 11px;
+    line-height: 13px;
+    padding-left: 2px;
+    font-family: courier;
+    text-transform: lowercase;
+    background-color: transparent;
+    margin: 1px;
+}
+
+#menu {
+   float: right;
+    margin: 18px;
+    text-align: right;
+}
+
+.inline li {
+    display: inline;
+}
+
+.postbox h1 {
+    margin-bottom: 0em;
+}
+
+.postbox h1 a:hover {
+        border-bottom: none;
+    }
+
+.postbox div {
+    margin-top: 1em;
+}
+
+.postbox  {
+    border-bottom: none;
+}
+
+.vcard {
+    margin-top: 0px !important;
+    float: left;
+}
+
+.vcard img {
+    /* thanks github */
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    height: 210px;
+    padding: 5px;
+    width: 210px;
+}

@@ -1,8 +1,8 @@
 {% extends "base.tmpl" %}
-{% block title %}  {{title}} {% endblock %}
+{% block page_title %}  {{title}} | {{ blog_title }} {% endblock %}
 {% block content %}
     <div class="postbox">
-    <h1><a href='{{permalink}}'>{{title}} | {{ blog_description }} </a></h1>
+    <h1><a href='{{permalink}}'>{{title}}</a></h1>
     {% if link %}
             <p><a href='{{link}}'>{{messages[lang]["Original site"]}}</a></p>
     {% endif %}
@@ -18,7 +18,7 @@
             {% endfor %}
         {% endif %}
 
-        <a href="{{post.pagenames[lang]+".txt"}}">{{messages[lang]["Source"]}}</a>
+        <a href="https://github.com/mgaitan/mgaitan.github.com/blob/writing/posts/{{post.pagenames[lang]+".rst"}}">{{messages[lang]["Source"]}}</a>
         {% if post.tags %}
             &nbsp;&nbsp;|&nbsp;&nbsp;{{messages[lang]["More posts about"]}}
             {% for tag in post.tags %}
