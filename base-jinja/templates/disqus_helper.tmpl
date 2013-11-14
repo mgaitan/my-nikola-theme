@@ -4,11 +4,10 @@
     {% if comment_system_id %}
         <div id="disqus_thread"></div>
         <script>
-        var disqus_shortname ="{{ comment_system_id }}",
+        var disqus_shortname ="{{ comment_system_id }}";
         {% if url %}
-            disqus_url="{{ url }}",
+            disqus_url="{{ url }}";
         {% endif %}
-        disqus_title={{ title|tojson }},
         (function() {
             var dsq = document.createElement('script'); dsq.async = true;
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
