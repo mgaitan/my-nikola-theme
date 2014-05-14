@@ -78,7 +78,7 @@
         </div>
     <div id="menu" class="span7 offset1">
       <ul class="inline">
-            {% for url, text in sidebar_links[lang] %}
+            {% for url, text in navigation_links[lang] %}
                 <li><a href="{{url}}">{{text}}</a>
                 {% if not loop.last %} / {% endif %}
             {% endfor %}
