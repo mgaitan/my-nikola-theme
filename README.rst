@@ -1,14 +1,18 @@
-Jinja2_ based Nikola_ theme for my blog http://mgaitan.github.com.
+The theme for my blog http://mgaitan.github.io.
 
-Ideas and css taken from:
+This new look & feel was inspired by:
 
-- https://bitbucket.org/sjl/stevelosh
-- http://flask.pocoo.org/docs/
+- http://medium.com/
+- https://www.readability.com/
+- http://alistapart.com
 
-It uses
+It's based on Bootstrap3-Jinja_ theme
+
+Extra assets:
 
 - Font Awesome http://fortawesome.github.com/Font-Awesome/
 - Jquery time-ago http://timeago.yarp.com/
 
+.. _Bootstrap3-Jinja: http://themes.getnikola.com/#bootstrap3-jinja
 .. _Jinja2: http://jinja.pocoo.org
-.. _Nikola: http://nikola.ralsina.com.ar
+.. _Nikola: http://getnikola.com/
