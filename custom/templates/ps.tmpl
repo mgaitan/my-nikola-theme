@@ -1,0 +1,8 @@
+{#  -*- coding: utf-8 -*- #}
+{% import 'post_header.tmpl' as pheader with context %}
+
+   <hr>
+    <div class="ps">
+    {{ pheader.html_translations(post) }}
+    <p>{{ messages("Source") }} <a href="https://github.com/mgaitan/mgaitan.github.com/blob/writing/{{ post.translated_source_path(lang) }}" id="sourcelink">github</a>. {{ messages("Source2") }} <a href="https://github.com/mgaitan/mgaitan.github.com/edit/writing/{{ post.translated_source_path(lang) }}" id="sourcelink">{{ messages("Source3")}}</a>.</p>
+    </div>
