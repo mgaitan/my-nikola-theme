@@ -21,13 +21,18 @@
     <div class="e-content entry-content" itemprop="articleBody text">
     {{ post.text() }}
     </div>
+
+    <hr>
+    <div class="ps">
+    {{ pheader.html_translations(post) }}
+    <p>{{ messages("Source") }} <a href="https://github.com/mgaitan/mgaitan.github.com/blob/writing/{{ post.source_path }}" id="sourcelink">github</a>. {{ messages("Source2") }} <a href="https://github.com/mgaitan/mgaitan.github.com/edit/writing/{{ post.source_path }}" id="sourcelink">{{ messages("Source3")}}</a>.</p>
+    </div>
+
     <aside class="postpromonav">
     <nav>
     {{ helper.html_tags(post) }}
     {{ helper.html_pager(post) }}
     </nav>
-    {{ pheader.html_translations(post) }}
-
     </aside>
     {% if not post.meta('nocomments') and site_has_comments %}
         <section class="comments">
@@ -40,10 +45,3 @@
 {{ comments.comment_link_script() }}
 {% endblock %}
 
-{% block sourcelink %}
-{% if show_sourcelink %}
-    <li>
-    <a href="{{ post.source_link() }}" id="sourcelink">{{ messages("Source") }}</a>
-    </li>
-{% endif %}
-{% endblock %}
