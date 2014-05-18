@@ -25,7 +25,7 @@
     <hr>
     <div class="ps">
     {{ pheader.html_translations(post) }}
-    <p>{{ messages("Source") }} <a href="https://github.com/mgaitan/mgaitan.github.com/blob/writing/{{ post.source_path }}" id="sourcelink">github</a>. {{ messages("Source2") }} <a href="https://github.com/mgaitan/mgaitan.github.com/edit/writing/{{ post.source_path }}" id="sourcelink">{{ messages("Source3")}}</a>.</p>
+    <p>{{ messages("Source") }} <a href="https://github.com/mgaitan/mgaitan.github.com/blob/writing/{{ post.translated_source_path(lang) }}" id="sourcelink">github</a>. {{ messages("Source2") }} <a href="https://github.com/mgaitan/mgaitan.github.com/edit/writing/{{ post.translated_source_path(lang) }}" id="sourcelink">{{ messages("Source3")}}</a>.</p>
     </div>
 
     <aside class="postpromonav">
