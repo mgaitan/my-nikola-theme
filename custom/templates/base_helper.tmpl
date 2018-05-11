@@ -28,7 +28,8 @@ lang="{{ lang }}">
     {% if description %}
     <meta name="description" content="{{ description }}">
     {% endif %}
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
     <title>{{ title|e }} | {%if title == blog_title %}{{ blog_description|e }} {% else %}{{ blog_title|e }} {% endif %} </title>
 
     {{ html_stylesheets() }}
