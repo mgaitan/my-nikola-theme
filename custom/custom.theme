@@ -1,0 +1,11 @@
+[Theme]
+engine = jinja
+parent = bootstrap4-jinja
+author = Martín Gaitán
+author_url = https://github.com/mgaitan
+based_on = Bootstrap 4 <http://getbootstrap.com/>
+license = MIT
+tags = bootstrap
+
+[Family]
+family = bootstrap4
