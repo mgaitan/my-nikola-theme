@@ -1,4 +1,4 @@
-The theme for my blog http://mgaitan.github.io.
+The theme for my blog http://github.com/mgaitan/mgaitan.github.io.
 
 This new look & feel was inspired by:
 
